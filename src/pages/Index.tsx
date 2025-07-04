@@ -73,12 +73,7 @@ const Index = () => {
               >
                 Услуги
               </a>
-              <a
-                href="#calculator"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                Калькулятор
-              </a>
+
               <a
                 href="#contacts"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -119,14 +114,6 @@ const Index = () => {
               >
                 <Icon name="MapPin" size={20} className="mr-2" />
                 Заказать поездку
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg"
-              >
-                <Icon name="Calculator" size={20} className="mr-2" />
-                Рассчитать стоимость
               </Button>
             </div>
           </div>
@@ -186,96 +173,6 @@ const Index = () => {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Calculator Section */}
-      <section id="calculator" className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Калькулятор стоимости
-            </h2>
-            <p className="text-xl text-gray-600">
-              Рассчитайте стоимость поездки за несколько секунд
-            </p>
-          </div>
-
-          <Card className="shadow-lg border-0">
-            <CardHeader>
-              <CardTitle className="text-2xl text-center">
-                Расчет поездки
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <Label htmlFor="from-city" className="text-base font-medium">
-                    Откуда
-                  </Label>
-                  <Input
-                    id="from-city"
-                    placeholder="Город отправления"
-                    value={fromCity}
-                    onChange={(e) => setFromCity(e.target.value)}
-                    className="mt-1"
-                  />
-                </div>
-                <div>
-                  <Label htmlFor="to-city" className="text-base font-medium">
-                    Куда
-                  </Label>
-                  <Input
-                    id="to-city"
-                    placeholder="Город назначения"
-                    value={toCity}
-                    onChange={(e) => setToCity(e.target.value)}
-                    className="mt-1"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <Label htmlFor="distance" className="text-base font-medium">
-                  Расстояние (км)
-                </Label>
-                <Input
-                  id="distance"
-                  type="number"
-                  placeholder="Введите расстояние"
-                  value={distance}
-                  onChange={(e) => setDistance(e.target.value)}
-                  className="mt-1"
-                />
-              </div>
-
-              <Button
-                onClick={calculatePrice}
-                className="w-full bg-yellow-500 hover:bg-yellow-600 text-black py-3 text-lg font-medium"
-                disabled={!fromCity || !toCity || !distance}
-              >
-                <Icon name="Calculator" size={20} className="mr-2" />
-                Рассчитать стоимость
-              </Button>
-
-              {calculatedPrice && (
-                <div className="text-center p-6 bg-yellow-50 rounded-lg border border-yellow-200">
-                  <p className="text-lg text-gray-700 mb-2">
-                    Приблизительная стоимость поездки:
-                  </p>
-                  <p className="text-4xl font-bold text-yellow-600">
-                    {calculatedPrice.toLocaleString()} ₽
-                  </p>
-                  <Badge
-                    variant="outline"
-                    className="mt-2 border-yellow-300 text-yellow-700"
-                  >
-                    40 ₽/км
-                  </Badge>
-                </div>
-              )}
-            </CardContent>
-          </Card>
         </div>
       </section>
 
