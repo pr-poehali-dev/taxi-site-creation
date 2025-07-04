@@ -104,11 +104,10 @@ const Index = () => {
           }}
         >
           <div className="text-center">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
-              Междугородние поездки <br />
-              <span className="text-yellow-400">и доставка</span>
+            <h2 className="text-5xl md:text-6xl mb-6 animate-fade-in font-light text-yellow-400">
+              Междугородние поездки и доставки
             </h2>
-            <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-[#ffffff]">
               Надежный сервис для комфортных поездок между городами и быстрой
               доставки грузов
             </p>
