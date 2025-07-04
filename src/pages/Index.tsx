@@ -21,7 +21,7 @@ const Index = () => {
   const calculatePrice = () => {
     const dist = parseFloat(distance);
     if (dist > 0) {
-      const basePrice = 35; // базовая стоимость за км
+      const basePrice = 40; // базовая стоимость за км
       const total = dist * basePrice;
       setCalculatedPrice(total);
     }
@@ -270,7 +270,7 @@ const Index = () => {
                     variant="outline"
                     className="mt-2 border-yellow-300 text-yellow-700"
                   >
-                    35 ₽/км
+                    40 ₽/км
                   </Badge>
                 </div>
               )}
