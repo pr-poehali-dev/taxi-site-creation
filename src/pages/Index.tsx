@@ -104,7 +104,7 @@ const Index = () => {
           }}
         >
           <div className="text-center">
-            <h2 className="text-5xl md:text-6xl mb-6 animate-fade-in font-light text-yellow-400">
+            <h2 className="text-5xl md:text-6xl mb-6 animate-fade-in font-light text-yellow-100">
               Междугородние поездки и доставки
             </h2>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-[#ffffff]">
