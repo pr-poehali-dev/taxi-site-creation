@@ -83,9 +83,7 @@ const Index = () => {
             </nav>
             <Button
               className="bg-yellow-500 hover:bg-yellow-600 text-black"
-              onClick={() =>
-                window.open("https://t.me/ilya_46region", "_blank")
-              }
+              onClick={() => window.open("tel:+79191342312", "_self")}
             >
               <Icon name="Phone" size={16} className="mr-2" />
               Заказать
@@ -115,9 +113,7 @@ const Index = () => {
               <Button
                 size="lg"
                 className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 text-lg"
-                onClick={() =>
-                  window.open("https://t.me/ilya_46region", "_blank")
-                }
+                onClick={() => window.open("tel:+79191342312", "_self")}
               >
                 <Icon name="MapPin" size={20} className="mr-2" />
                 Заказать поездку
