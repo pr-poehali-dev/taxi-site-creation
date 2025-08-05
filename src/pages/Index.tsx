@@ -171,7 +171,7 @@ const Index = () => {
             {tariffs.map((tariff, index) => (
               <Card
                 key={index}
-                className="hover:shadow-lg transition-shadow duration-300 border-0 shadow-md"
+                className="hover:shadow-lg transition-shadow duration-300 border-2 border-gray-300 shadow-md"
               >
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
