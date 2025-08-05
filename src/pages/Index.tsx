@@ -226,7 +226,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <Icon name="Car" size={24} className="text-yellow-500" />
-              <span className="text-lg font-bold">TaxiExpress</span>
+              <span className="text-lg font-bold">ТаксиКуряночка</span>
             </div>
             <p className="text-gray-400 text-sm">
               © 2024 TaxiExpress. Все права защищены.
