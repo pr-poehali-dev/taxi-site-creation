@@ -215,7 +215,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Наши услуги
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl max-w-2xl mx-auto font-bold text-[#000000]">
               Предоставляем полный спектр транспортных услуг для ваших
               потребностей
             </p>
