@@ -32,25 +32,25 @@ const Index = () => {
       title: "Эконом",
       description: "",
       icon: "Car",
-      features: [],
+      features: ["от 25р/км"],
     },
     {
       title: "Комфорт",
       description: "",
       icon: "Shield",
-      features: [],
+      features: ["от 30р/км"],
     },
     {
       title: "Бизнес",
       description: "",
       icon: "Crown",
-      features: [],
+      features: ["от 35р/км"],
     },
     {
       title: "Минивен",
       description: "",
       icon: "Users",
-      features: [],
+      features: ["от 40р/км"],
     },
   ];
 
