@@ -44,7 +44,7 @@ const Index = () => {
       title: "Бизнес",
       description: "",
       icon: "Crown",
-      features: ["от 35р/км"],
+      features: ["от 45р/км"],
     },
     {
       title: "Минивен",
