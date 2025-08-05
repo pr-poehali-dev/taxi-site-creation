@@ -203,11 +203,15 @@ const Index = () => {
                         key={featureIndex}
                         className="flex items-center text-sm text-gray-600"
                       >
-                        <Icon
-                          name="Check"
-                          size={16}
-                          className="text-green-500 mr-2"
-                        />
+                        {["Эконом", "Комфорт", "Бизнес", "Минивен"].includes(service.title) ? (
+                          <span className="mr-2">•</span>
+                        ) : (
+                          <Icon
+                            name="Check"
+                            size={16}
+                            className="text-green-500 mr-2"
+                          />
+                        )}
                         {feature}
                       </li>
                     ))}
