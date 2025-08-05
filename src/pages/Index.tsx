@@ -31,7 +31,7 @@ const Index = () => {
     {
       title: "Эконом",
       description: "",
-      icon: "Car",
+      icon: "CarFront",
       features: ["от 25р/км"],
     },
     {
