@@ -163,7 +163,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Тарифы
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl max-w-2xl mx-auto text-[#000000] font-bold">
               Выберите подходящий класс автомобиля для вашей поездки
             </p>
           </div>
