@@ -27,7 +27,7 @@ const Index = () => {
     }
   };
 
-  const services = [
+  const tariffs = [
     {
       title: "Эконом",
       description: "Доступные поездки на надежных автомобилях",
@@ -68,6 +68,9 @@ const Index = () => {
         "Семейные поездки",
       ],
     },
+  ];
+
+  const services = [
     {
       title: "Междугородние поездки",
       description: "Комфортные поездки между городами с опытными водителями",
@@ -107,6 +110,12 @@ const Index = () => {
               <h1 className="text-2xl font-bold text-gray-900">ТаксиКуряночка</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
+              <a
+                href="#tariffs"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                Тарифы
+              </a>
               <a
                 href="#services"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -163,6 +172,57 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Tariffs Section */}
+      <section id="tariffs" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Тарифы
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Выберите подходящий класс автомобиля для вашей поездки
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {tariffs.map((tariff, index) => (
+              <Card
+                key={index}
+                className="hover:shadow-lg transition-shadow duration-300 border-0 shadow-md"
+              >
+                <CardHeader className="text-center pb-4">
+                  <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon
+                      name={tariff.icon}
+                      size={32}
+                      className="text-yellow-600"
+                    />
+                  </div>
+                  <CardTitle className="text-xl font-bold text-gray-900">
+                    {tariff.title}
+                  </CardTitle>
+                  <CardDescription className="text-gray-600">
+                    {tariff.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {tariff.features.map((feature, featureIndex) => (
+                      <li
+                        key={featureIndex}
+                        className="flex items-center text-sm text-gray-600"
+                      >
+                        <span className="mr-2">•</span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -203,15 +263,11 @@ const Index = () => {
                         key={featureIndex}
                         className="flex items-center text-sm text-gray-600"
                       >
-                        {["Эконом", "Комфорт", "Бизнес", "Минивен"].includes(service.title) ? (
-                          <span className="mr-2">•</span>
-                        ) : (
-                          <Icon
-                            name="Check"
-                            size={16}
-                            className="text-green-500 mr-2"
-                          />
-                        )}
+                        <Icon
+                          name="Check"
+                          size={16}
+                          className="text-green-500 mr-2"
+                        />
                         {feature}
                       </li>
                     ))}
