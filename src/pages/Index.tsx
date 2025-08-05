@@ -131,7 +131,7 @@ const Index = () => {
         <div
           className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/img/c7b4a4ae-c457-4fec-a5c4-4ac948f4a7cd.jpg')`,
+            backgroundImage: `url('/img/7a38e6d9-cbd8-4fff-9ee6-c6d784a1e0d7.jpg')`,
           }}
         >
           <div className="text-center">
