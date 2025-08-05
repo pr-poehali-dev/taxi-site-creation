@@ -131,7 +131,7 @@ const Index = () => {
         <div
           className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/img/faa6bace-404c-43b7-bdeb-9c3447d7c5b0.jpg')`,
+            backgroundImage: `url('https://cdn.poehali.dev/files/71216cad-ba97-427c-b9f8-0ff4dfc2cd91.png')`,
           }}
         >
           <div className="text-center">
