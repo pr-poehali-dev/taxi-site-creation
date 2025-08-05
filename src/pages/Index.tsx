@@ -30,25 +30,25 @@ const Index = () => {
   const tariffs = [
     {
       title: "Эконом",
-      description: "Доступные поездки на надежных автомобилях",
+      description: "",
       icon: "Car",
       features: [],
     },
     {
       title: "Комфорт",
-      description: "Повышенный комфорт для приятных поездок",
+      description: "",
       icon: "Shield",
       features: [],
     },
     {
       title: "Бизнес",
-      description: "Премиум уровень для деловых поездок",
+      description: "",
       icon: "Crown",
       features: [],
     },
     {
       title: "Минивен",
-      description: "Просторные автомобили для больших групп",
+      description: "",
       icon: "Users",
       features: [],
     },
