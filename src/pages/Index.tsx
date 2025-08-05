@@ -193,9 +193,10 @@ const Index = () => {
                     {tariff.features.map((feature, featureIndex) => (
                       <li
                         key={featureIndex}
-                        className="flex items-center text-sm text-gray-600"
+                        className="flex items-center font-black text-[#000000] text-lg mx-0 px-[60px]"
                       >
-                        <span className="mr-2">•</span>
+                        <span className="mr-2">
+</span>
                         {feature}
                       </li>
                     ))}
